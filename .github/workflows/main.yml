@@ -1,0 +1,70 @@
+name: Build and Deploy Python app to Azure Web App - alphavue-app-live
+
+on:
+  push:
+    branches:
+      - main # This workflow runs on pushes to the 'main' branch
+  workflow_dispatch: # Allows manual triggering from the GitHub Actions UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Runs on a fresh Ubuntu virtual machine
+    permissions:
+      contents: write # CRITICAL: Grant write permissions for uploading artifacts
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Checks out your repository code
+
+      - name: Set up Python version
+        uses: actions/setup-python@v5 # Configures the specified Python version
+        with:
+          python-version: '3.10' # Ensure this matches your Azure App Service Python version
+
+      - name: Create and start virtual environment
+        run: | # Commands to create and activate a virtual environment
+          python -m venv venv
+          source venv/bin/activate
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt # Installs all packages from requirements.txt
+        # Note: This runs within the virtual environment created above
+
+      - name: Upload artifact for deployment jobs
+        uses: actions/upload-artifact@v4 # Uploads your application files as an artifact
+        with:
+          name: python-app # Name of the artifact
+          path: | # Specifies what to include in the artifact package
+            . # Includes all files from the current directory
+            !venv/ # Excludes the virtual environment folder to keep the package small
+            !.git/ # Excludes the .git folder
+            !.github/ # Excludes the .github folder (where this workflow file resides)
+
+  deploy:
+    runs-on: ubuntu-latest # The deploy job also runs on Ubuntu
+    needs: build # This job depends on the 'build' job completing successfully
+    permissions:
+      id-token: write # Required for requesting the JWT for Azure login (OIDC)
+      contents: read # Required for actions/checkout (though not explicitly used here, good practice)
+
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4 # Downloads the artifact created by the 'build' job
+        with:
+          name: python-app # Downloads the artifact named 'python-app'
+
+      - name: Login to Azure
+        uses: azure/login@v2 # Logs into Azure using the Service Principal credentials
+        with:
+          # Use the AZURE_CREDENTIALS secret that contains the full JSON Service Principal
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: 'Deploy to Azure Web App'
+        uses: azure/webapps-deploy@v3 # Deploys the application to Azure App Service
+        id: deploy-to-webapp
+        with:
+          app-name: 'alphavue-app-live' # Your Azure App Service name
+          slot-name: 'Production' # Deploying to the production slot
+          # CRITICAL: Specify the startup command for your Streamlit app
+          # This tells Azure how to run your Python application
+          startup-command: 'streamlit run portfolio_app.py --server.port 8000 --server.enableCORS false --server.enableXsrfProtection false'
