@@ -1,0 +1,48 @@
+# This workflow will build and deploy a Python app to an Azure WebApp
+# For more information see: https://docs.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=linux&pivots=development-environment-github-codespace
+
+name: Build and Deploy Python app to alphavue-app-live
+
+on:
+  push:
+    branches:
+      - main # Or your deployment branch
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # --- START OF NEW/MODIFIED SECTIONS ---
+
+      # Step 1: Set up Python environment
+      - name: Set up Python version
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' # Ensure this matches your Azure App Service Python version
+
+      # Step 2: Install your project's Python dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 3: Deploy the application to Azure WebApp
+      - name: 'Deploy to Azure WebApp'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'alphavue-app-live' # THIS MUST MATCH YOUR APP SERVICE NAME exactly
+          slot-name: 'production'
+          # This secret name MUST MATCH YOUR APP SERVICE NAME (uppercase, hyphens replaced by underscores)
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ALPHAVUEAPPLIVE }}
+          package: '.' # Keep this as '.' if portfolio_app.py and requirements.txt are in your repo's root
+          # CRITICAL: Specify the startup command for your Streamlit app
+          # Streamlit typically runs on port 8501. App Service will map this correctly.
+          startupCommand: 'streamlit run portfolio_app.py --server.port 8000 --server.enableCORS false --server.enableXsrfProtection false'
+          # Note: --server.port 8000 is a common convention for App Service if it doesn't automatically detect 8501.
+          # Disabling CORS/XSRF protection is often done for easier initial deployment, but consider security for production.
+
+      # --- END OF NEW/MODIFIED SECTIONS ---
