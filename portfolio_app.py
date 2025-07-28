@@ -313,7 +313,7 @@ def load_saved_recommendations_from_db(user_id):
 
 # --- Data Loading Functions ---
 @st.cache_data
-def load_prediction_data(stock_path=r"final stock output.csv", mutual_fund_path=r"C:\Users\tanma\OneDrive\Desktop\Project\Main Project\final mutual fund output.csv"):
+def load_prediction_data(stock_path=r"final stock output.csv", mutual_fund_path=r"final mutual fund output.csv"):
     """Loads stock and mutual fund prediction data from CSVs."""
     try:
         stocks_df = pd.read_csv(stock_path)
