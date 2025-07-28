@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest # Runs on a fresh Ubuntu virtual machine
     permissions:
-      contents: read # Required for actions/checkout to read your repository content
+      contents: write # Required for actions/checkout to read your repository content
 
     steps:
       - name: Checkout repository
