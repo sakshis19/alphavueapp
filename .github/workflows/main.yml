@@ -6,15 +6,13 @@ on:
       - main
   workflow_dispatch:
 
-# Set default permissions for all jobs in this workflow
 permissions:
-  contents: read # Default read permission for all jobs
-  id-token: write # Required for OIDC authentication with Azure
+  contents: read
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Explicitly grant write permission for contents for this job to upload artifacts
     permissions:
       contents: write # Override default to allow writing (uploading artifacts)
 
@@ -36,8 +34,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Upload artifact for deployment jobs
-        # Using v3 of upload-artifact for broader compatibility
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # <--- CHANGED TO V4
         with:
           name: python-app
           path: |
@@ -45,21 +42,17 @@ jobs:
             !venv/
             !.git/
             !.github/
-            # Ensure your data files are included if they are not directly in the root but needed for deployment
-            # Example if you have a 'data' folder in the root:
-            # data/
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build # This job depends on the 'build' job completing successfully
+    needs: build
     permissions:
-      id-token: write # Required for OIDC authentication with Azure
-      contents: read # Required for downloading artifact
+      id-token: write
+      contents: read
 
     steps:
       - name: Download artifact from build job
-        # Using v3 of download-artifact for consistency
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4 # <--- CHANGED TO V4
         with:
           name: python-app
 
@@ -69,7 +62,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3 # Using v3 for consistency if needed, but v3/v4/v5 are often compatible
+        uses: azure/webapps-deploy@v3 # This one is fine, it's not deprecated yet
         id: deploy-to-webapp
         with:
           app-name: 'alphavue-app-live'
