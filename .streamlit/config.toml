@@ -1,0 +1,14 @@
+[theme]
+# A strong, friendly blue for interactive elements
+primaryColor = "#0D6AB7"
+
+# A very light, airy blue for the main background
+backgroundColor = "#F0F8FF"
+
+# A calming sky blue for the sidebar
+secondaryBackgroundColor = "#87CEEB"
+
+# A dark slate gray for soft, readable text
+textColor = "#2F4F4F"
+
+font = "sans serif"

@@ -1,0 +1,101 @@
+StockName,Ticker,Beta,Volatility,Risk Category
+ABB India Ltd.,ABB.NS,0.68,0.3291,Medium Risk
+Adani Energy Solutions Ltd.,ADANIENSOL.NS,0.87,0.5151,High Risk
+Adani Enterprises Ltd.,ADANIENT.NS,0.71,0.4102,High Risk
+Adani Green Energy Ltd.,ADANIGREEN.NS,0.87,0.5374,High Risk
+Adani Ports & SEZ Ltd.,ADANIPORTS.NS,0.44,0.3216,Medium Risk
+Adani Power Ltd.,ADANIPOWER.NS,0.25,0.4467,High Risk
+Adani Total Gas Ltd.,ATGL.NS,0.96,0.4482,High Risk
+Ambuja Cements Ltd.,AMBUJACEM.NS,-0.14,0.2767,Medium Risk
+Apollo Hospitals Enterprise Ltd.,APOLLOHOSP.NS,0.16,0.2295,Low Risk
+Asian Paints Ltd.,ASIANPAINT.NS,0.39,0.21,Low Risk
+Avenue Supermarts Ltd.,DMART.NS,0.43,0.313,Medium Risk
+Axis Bank Ltd.,AXISBANK.NS,0.48,0.2246,Low Risk
+Bajaj Auto Ltd.,BAJAJ-AUTO.NS,0.77,0.2907,Medium Risk
+Bajaj Finance Ltd.,BAJFINANCE.NS,0.48,0.2657,Medium Risk
+Bajaj Finserv Ltd.,BAJAJFINSV.NS,0.63,0.2571,Medium Risk
+Bajaj Holdings & Investment Ltd.,BAJAJHLDNG.NS,0.12,0.3636,Medium Risk
+Bank of Baroda,BANKBARODA.NS,0.53,0.2883,Medium Risk
+Berger Paints India Ltd.,BERGEPAINT.NS,0.47,0.2563,Medium Risk
+Bharat Electronics Ltd.,BEL.NS,0.38,0.3115,Medium Risk
+Bharat Petroleum Corporation Ltd.,BPCL.NS,0.92,0.2771,Medium Risk
+Bharti Airtel Ltd.,BHARTIARTL.NS,0.15,0.2193,Low Risk
+Bosch Ltd.,BOSCHLTD.NS,0.5,0.2553,Medium Risk
+Britannia Industries Ltd.,BRITANNIA.NS,0.53,0.2109,Low Risk
+Canara Bank,CANBK.NS,0.62,0.3127,Medium Risk
+Cholamandalam Inv. & Fin. Co. Ltd.,CHOLAFIN.NS,0.63,0.3447,Medium Risk
+Cipla Ltd.,CIPLA.NS,0.1,0.233,Low Risk
+Coal India Ltd.,COALINDIA.NS,0.04,0.2217,Low Risk
+Dabur India Ltd.,DABUR.NS,0.23,0.2128,Low Risk
+Godrej Consumer Products Ltd.,GODREJCP.NS,0.27,0.2609,Medium Risk
+Grasim Industries Ltd.,GRASIM.NS,0.28,0.2281,Low Risk
+Havells India Ltd.,HAVELLS.NS,0.38,0.2557,Medium Risk
+HCL Technologies Ltd.,HCLTECH.NS,0.23,0.2566,Medium Risk
+HDFC Bank Ltd.,HDFCBANK.NS,0.62,0.1782,Low Risk
+HDFC Life Insurance Company Ltd.,HDFCLIFE.NS,0.65,0.2287,Low Risk
+Hero MotoCorp Ltd.,HEROMOTOCO.NS,0.71,0.2662,Medium Risk
+Hindalco Industries Ltd.,HINDALCO.NS,1.02,0.2888,Medium Risk
+Hindustan Aeronautics Ltd.,HAL.NS,0.52,0.3478,Medium Risk
+Hindustan Unilever Ltd.,HINDUNILVR.NS,0.37,0.1996,Low Risk
+Hindustan Zinc Ltd.,HINDZINC.NS,0.57,0.3503,Medium Risk
+ICICI Bank Ltd.,ICICIBANK.NS,0.49,0.1813,Low Risk
+ICICI Lombard Gen. Insurance Co. Ltd.,ICICIGI.NS,0.59,0.245,Low Risk
+ICICI Prudential Life Insurance Co. Ltd.,ICICIPRULI.NS,0.58,0.2333,Low Risk
+Indian Oil Corporation Ltd.,IOC.NS,0.78,0.2657,Medium Risk
+Indian Railway Catering & Tourism Corp. Ltd.,IRCTC.NS,0.1,0.2484,Low Risk
+IndusInd Bank Ltd.,INDUSINDBK.NS,0.65,0.4381,High Risk
+Info Edge (India) Ltd.,NAUKRI.NS,0.69,0.3378,Medium Risk
+Infosys Ltd.,INFY.NS,0.35,0.2452,Low Risk
+InterGlobe Aviation Ltd.,INDIGO.NS,0.92,0.2893,Medium Risk
+ITC Ltd.,ITC.NS,0.06,0.1795,Low Risk
+Jindal Steel & Power Ltd.,JINDALSTEL.NS,0.78,0.2975,Medium Risk
+Jio Financial Services Ltd.,JIOFIN.NS,,0.3304,Medium Risk
+JSW Steel Ltd.,JSWSTEEL.NS,0.65,0.2467,Low Risk
+Kotak Mahindra Bank Ltd.,KOTAKBANK.NS,0.38,0.2356,Low Risk
+Larsen & Toubro Ltd.,LT.NS,0.5,0.2447,Low Risk
+Life Insurance Corporation of India,LICI.NS,0.53,0.247,Low Risk
+LTIMindtree Ltd.,LTIM.NS,0.44,0.296,Medium Risk
+Macrotech Developers Ltd.,LODHA.NS,0.23,0.4308,High Risk
+Mahindra & Mahindra Ltd.,M&M.NS,0.51,0.2903,Medium Risk
+Marico Ltd.,MARICO.NS,0.16,0.2222,Low Risk
+Maruti Suzuki India Ltd.,MARUTI.NS,0.19,0.2212,Low Risk
+Nestle India Ltd.,NESTLEIND.NS,0.24,0.1968,Low Risk
+NTPC Ltd.,NTPC.NS,0.3,0.2413,Low Risk
+Oil & Natural Gas Corporation Ltd.,ONGC.NS,0.38,0.2606,Medium Risk
+Page Industries Ltd.,PAGEIND.NS,0.1,0.2536,Medium Risk
+Pidilite Industries Ltd.,PIDILITIND.NS,0.34,0.1884,Low Risk
+PNB Gilts Ltd.,PNBGILTS.NS,0.37,0.3948,Medium Risk
+Power Finance Corporation Ltd.,PFC.NS,0.75,0.3674,Medium Risk
+Power Grid Corporation of India Ltd.,POWERGRID.NS,0.27,0.2388,Low Risk
+Procter & Gamble Hygiene & Health Care Ltd.,PGHH.NS,0.17,0.1992,Low Risk
+Punjab National Bank,PNB.NS,0.58,0.2983,Medium Risk
+REC Ltd.,RECLTD.NS,0.41,0.3661,Medium Risk
+Reliance Industries Ltd.,RELIANCE.NS,0.22,0.2099,Low Risk
+Samvardhana Motherson Int. Ltd.,MOTHERSON.NS,1.17,0.351,Medium Risk
+SBI Cards and Payment Services Ltd.,SBICARD.NS,0.28,0.2642,Medium Risk
+SBI Life Insurance Company Ltd.,SBILIFE.NS,0.38,0.2355,Low Risk
+Shree Cement Ltd.,SHREECEM.NS,0.23,0.2147,Low Risk
+Shriram Finance Ltd.,SHRIRAMFIN.NS,0.85,0.3553,Medium Risk
+Siemens Ltd.,SIEMENS.NS,0.48,0.5503,High Risk
+SRF Ltd.,SRF.NS,0.22,0.301,Medium Risk
+State Bank of India,SBIN.NS,0.49,0.2142,Low Risk
+Sun Pharmaceutical Industries Ltd.,SUNPHARMA.NS,0.31,0.2043,Low Risk
+Swiggy (Bundl Technologies),SWIGGY.NS,,0.5355,High Risk
+Tata Consultancy Services Ltd.,TCS.NS,0.33,0.1998,Low Risk
+Tata Consumer Products Ltd.,TATACONSUM.NS,0.42,0.2379,Low Risk
+Tata Motors Ltd.,TATAMOTORS.NS,1.12,0.2983,Medium Risk
+Tata Power Company Ltd.,TATAPOWER.NS,0.59,0.281,Medium Risk
+Tata Steel Ltd.,TATASTEEL.NS,1.07,0.2776,Medium Risk
+Tech Mahindra Ltd.,TECHM.NS,0.34,0.2599,Medium Risk
+Titan Company Ltd.,TITAN.NS,0.3,0.2208,Low Risk
+Torrent Pharmaceuticals Ltd.,TORNTPHARM.NS,0.13,0.2315,Low Risk
+Trent Ltd.,TRENT.NS,0.21,0.4029,High Risk
+TVS Motor Company Ltd.,TVSMOTOR.NS,-0.04,0.283,Medium Risk
+UltraTech Cement Ltd.,ULTRACEMCO.NS,0.43,0.223,Low Risk
+Union Bank of India,UNIONBANK.NS,1.06,0.3485,Medium Risk
+United Spirits Ltd.,MCDOWELL-N.NS,,,Unknown
+Varun Beverages Ltd.,VBL.NS,0.16,0.3532,Medium Risk
+Vedanta Ltd.,VEDL.NS,0.89,0.3154,Medium Risk
+Wipro Ltd.,WIPRO.NS,0.6,0.2704,Medium Risk
+Zomato Ltd.,ZOMATO.NS,,,Unknown
+Zydus Lifesciences Ltd.,ZYDUSLIFE.NS,0.46,0.2428,Low Risk

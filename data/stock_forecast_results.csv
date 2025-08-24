@@ -1,0 +1,91 @@
+StockName,Ticker,R2_Score,RMSE,MAPE,SMAPE,Forecasted_1Y_CAGR,Historical_5Y_CAGR
+Adani Green Energy Ltd.,ADANIGREEN.NS,0.9795,60.99,3.42,3.41,-0.75,20.88
+Pidilite Industries Ltd.,PIDILITIND.NS,0.8907,46.68,1.18,1.17,1.51,17.05
+Varun Beverages Ltd.,VBL.NS,0.9312,15.56,2.38,2.41,0.03,50.44
+Tata Consumer Products Ltd.,TATACONSUM.NS,0.9252,23.8,1.84,1.86,-7.56,15.54
+Tata Power Company Ltd.,TATAPOWER.NS,0.9095,9.53,2.04,2.06,-0.91,48.15
+UltraTech Cement Ltd.,ULTRACEMCO.NS,0.876,289.94,2.27,2.31,-4.74,25.56
+Shriram Finance Ltd.,SHRIRAMFIN.NS,0.9763,11.1,1.58,1.59,2.47,37.85
+Avenue Supermarts Ltd.,DMART.NS,0.9844,63.61,1.15,1.15,8.67,15.3
+Coal India Ltd.,COALINDIA.NS,0.9824,5.1,0.99,0.99,0.06,35.3
+Indian Railway Catering & Tourism Corp. Ltd.,IRCTC.NS,0.8619,39.47,4.28,4.4,7.16,22.39
+Cholamandalam Inv. & Fin. Co. Ltd.,CHOLAFIN.NS,0.9645,29.08,1.75,1.76,-1,46.59
+Info Edge (India) Ltd.,NAUKRI.NS,0.9833,22.49,1.25,1.25,0.19,16.11
+Bajaj Auto Ltd.,BAJAJ-AUTO.NS,0.9498,230.06,2.38,2.42,3.65,26.94
+Canara Bank,CANBK.NS,0.8756,3.47,3.12,3.18,-3.59,43.2
+Marico Ltd.,MARICO.NS,0.9853,7.72,0.94,0.94,-5.17,16
+Kotak Mahindra Bank Ltd.,KOTAKBANK.NS,0.8872,55.78,2.29,2.26,1.37,8.44
+Tata Consultancy Services Ltd.,TCS.NS,0.9585,76.94,1.58,1.58,-3.66,7.54
+Jindal Steel & Power Ltd.,JINDALSTEL.NS,0.8235,27.89,2.46,2.48,-0.68,34.82
+Adani Power Ltd.,ADANIPOWER.NS,0.9489,17.15,2.31,2.33,3.33,74.28
+Hindustan Aeronautics Ltd.,HAL.NS,0.9449,139.64,2.42,2.47,-4.3,50.79
+Britannia Industries Ltd.,BRITANNIA.NS,0.9698,77.46,1.11,1.1,-4.11,9.37
+Bharat Electronics Ltd.,BEL.NS,0.9838,7.06,1.9,1.92,0.89,61.98
+State Bank of India,SBIN.NS,0.822,17.08,1.84,1.86,14.65,35.44
+Dabur India Ltd.,DABUR.NS,0.98,7.45,1.09,1.09,-2.92,2.09
+Tech Mahindra Ltd.,TECHM.NS,0.9521,36.94,1.84,1.82,2.51,18.49
+Punjab National Bank,PNB.NS,0.9261,3.09,2.57,2.61,-3.09,27.63
+Adani Ports & SEZ Ltd.,ADANIPORTS.NS,0.9351,33.01,2.04,2.06,-1.11,31.36
+Godrej Consumer Products Ltd.,GODREJCP.NS,0.9817,15.76,1.05,1.06,2.01,12.62
+Hindalco Industries Ltd.,HINDALCO.NS,0.9365,12.49,1.58,1.59,3.57,30.2
+Indian Oil Corporation Ltd.,IOC.NS,0.9693,2.81,1.65,1.66,0.9,28.35
+Hero MotoCorp Ltd.,HEROMOTOCO.NS,0.9824,78.05,1.5,1.52,-6.65,14.92
+IndusInd Bank Ltd.,INDUSINDBK.NS,0.9674,52.18,3.8,3.9,-5.19,9.31
+Page Industries Ltd.,PAGEIND.NS,0.9461,1048.75,2.08,2.06,3.12,20.46
+Infosys Ltd.,INFY.NS,0.9449,43,2.06,2.06,-1.11,11.14
+ITC Ltd.,ITC.NS,0.9019,9.79,1.87,1.89,1.1,20.08
+Hindustan Unilever Ltd.,HINDUNILVR.NS,0.9456,44.46,1.37,1.36,5.06,5
+Vedanta Ltd.,VEDL.NS,0.9683,10.01,1.98,2,5.2,49.96
+ABB India Ltd.,ABB.NS,0.9835,144.28,1.73,1.72,-3.2,39.96
+Shree Cement Ltd.,SHREECEM.NS,0.9467,529.33,1.54,1.54,-0.94,7.28
+Mahindra & Mahindra Ltd.,M&M.NS,0.9806,51.69,1.5,1.51,0.88,41.46
+Macrotech Developers Ltd.,LODHA.NS,0.9521,27.92,1.47,1.48,-2.41,29.9
+Grasim Industries Ltd.,GRASIM.NS,0.9647,34.16,1.08,1.08,-4.41,34.21
+Union Bank of India,UNIONBANK.NS,0.9059,4.06,2.75,2.8,3.92,39.55
+Zydus Lifesciences Ltd.,ZYDUSLIFE.NS,0.9318,23.42,1.99,2.01,-2.59,21.06
+Havells India Ltd.,HAVELLS.NS,0.9317,41.83,1.94,1.94,-0.16,20.72
+Power Grid Corporation of India Ltd.,POWERGRID.NS,0.9588,4.52,1.27,1.28,0.82,30.66
+NTPC Ltd.,NTPC.NS,0.9634,5.91,1.47,1.48,2.07,33.64
+LTIMindtree Ltd.,LTIM.NS,0.9586,121.22,1.97,1.99,-3.43,17.78
+Bharti Airtel Ltd.,BHARTIARTL.NS,0.9676,39.95,1.93,1.96,8.42,30
+ICICI Bank Ltd.,ICICIBANK.NS,0.9379,29.97,1.89,1.89,5.06,31.71
+Nestle India Ltd.,NESTLEIND.NS,0.8944,21.95,1.38,1.4,-0.93,9.01
+Torrent Pharmaceuticals Ltd.,TORNTPHARM.NS,0.9616,59.34,1.58,1.6,0.38,22.59
+ICICI Lombard Gen. Insurance Co. Ltd.,ICICIGI.NS,0.8878,51.39,2.49,2.53,2.39,9
+Bajaj Holdings & Investment Ltd.,BAJAJHLDNG.NS,0.9798,274.42,1.62,1.64,3.49,41.58
+Oil & Natural Gas Corporation Ltd.,ONGC.NS,0.8784,7.92,2.67,2.73,0.35,31.58
+Adani Total Gas Ltd.,ATGL.NS,0.8166,57.87,6.6,6.31,-6.46,31.12
+Bank of Baroda,BANKBARODA.NS,0.8826,5.59,2.02,2.05,2.45,42.12
+Procter & Gamble Hygiene & Health Care Ltd.,PGHH.NS,0.9847,151.01,0.77,0.77,5.94,7.34
+Bajaj Finance Ltd.,BAJFINANCE.NS,0.9497,22.63,2.23,2.2,6.62,21.89
+Trent Ltd.,TRENT.NS,0.977,161.64,2.26,2.29,2.73,54.98
+SBI Life Insurance Company Ltd.,SBILIFE.NS,0.924,45.49,2.47,2.51,-1.11,16.75
+Power Finance Corporation Ltd.,PFC.NS,0.9488,10.11,2.07,2.09,1.54,49.71
+HDFC Life Insurance Company Ltd.,HDFCLIFE.NS,0.9717,11.58,1.36,1.35,8.77,5.88
+Adani Enterprises Ltd.,ADANIENT.NS,0.8685,132.91,4.11,4.23,-6.65,58.24
+Bharat Petroleum Corporation Ltd.,BPCL.NS,0.9572,5.46,1.5,1.51,3.49,15.54
+Bajaj Finserv Ltd.,BAJAJFINSV.NS,0.9257,47.16,2.16,2.15,1.51,25.67
+ICICI Prudential Life Insurance Co. Ltd.,ICICIPRULI.NS,0.96,12.96,1.64,1.66,-0.37,6.97
+Cipla Ltd.,CIPLA.NS,0.8224,27.94,1.56,1.57,-0.44,16.35
+Wipro Ltd.,WIPRO.NS,0.9141,6.84,2.1,2.09,-1.73,13.31
+Hindustan Zinc Ltd.,HINDZINC.NS,0.9543,19.22,3.11,3.12,0.21,25.01
+Reliance Industries Ltd.,RELIANCE.NS,0.922,29.32,1.75,1.76,2.06,7.93
+Tata Steel Ltd.,TATASTEEL.NS,0.7944,5.5,3.06,3.09,-0.58,33.67
+REC Ltd.,RECLTD.NS,0.9736,10.9,1.83,1.85,0.54,46.35
+SRF Ltd.,SRF.NS,0.9373,76.9,2.16,2.13,1.09,28.14
+Berger Paints India Ltd.,BERGEPAINT.NS,0.9444,10.34,1.43,1.43,7.37,3.91
+Tata Motors Ltd.,TATAMOTORS.NS,0.9407,36.5,3.94,4.04,1.79,41.48
+SBI Cards and Payment Services Ltd.,SBICARD.NS,0.973,14.32,1.49,1.49,9.3,0.12
+Bosch Ltd.,BOSCHLTD.NS,0.9679,620.64,1.66,1.67,-5.46,25.53
+HCL Technologies Ltd.,HCLTECH.NS,0.9341,42.69,2.24,2.27,5.11,20.17
+JSW Steel Ltd.,JSWSTEEL.NS,0.8493,26.11,2.1,2.08,-0.43,32.38
+Sun Pharmaceutical Industries Ltd.,SUNPHARMA.NS,0.8063,53.04,2.81,2.84,0.9,26.64
+TVS Motor Company Ltd.,TVSMOTOR.NS,0.8587,101.63,3.65,3.74,-1.56,50.26
+Asian Paints Ltd.,ASIANPAINT.NS,0.9886,35.31,1.04,1.04,0.71,7.43
+HDFC Bank Ltd.,HDFCBANK.NS,0.9795,24.66,1.1,1.1,1.06,14.56
+Apollo Hospitals Enterprise Ltd.,APOLLOHOSP.NS,0.9322,121.74,1.44,1.44,0.37,36.31
+Siemens Ltd.,SIEMENS.NS,0.9835,214.68,2.95,2.8,-4.85,21.02
+PNB Gilts Ltd.,PNBGILTS.NS,0.9764,2.08,1.43,1.41,3.58,27.37
+InterGlobe Aviation Ltd.,INDIGO.NS,0.9456,163.49,3.12,3.18,9.55,37.84
+Ambuja Cements Ltd.,AMBUJACEM.NS,0.9591,10.54,1.33,1.34,-9.07,23.61
+Maruti Suzuki India Ltd.,MARUTI.NS,0.8689,213.43,1.5,1.51,-0.53,16.21
