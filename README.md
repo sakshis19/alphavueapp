@@ -165,6 +165,15 @@ For questions, feedback, or collaboration:
 - **Email:** sakshishastri72@gmail.com
 - **GitHub:** [https://github.com/sakshis19](https://github.com/sakshis19)
 - 
+- ## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+MIT License
+
+Copyright (c) 2025 Sakshi Shastri
+
+- 
 ```mermaid
 flowchart TD
     A([START]) --> B[MODULE 1: USER PROFILING]
