@@ -447,8 +447,7 @@ def create_user(username, email, password, admin_code_attempt=None):
     role = 'user' # Default role
     
     # Directly read the admin code from environment variables
-    correct_admin_code = os.environ.get("app_secrets_admin_code")
-    
+    correct_admin_code = st.secrets["app_secrets"]["admin_code"]    
     # If an admin code was provided and it matches the one in our settings, grant admin role
     if admin_code_attempt and correct_admin_code and admin_code_attempt == correct_admin_code:
         role = 'admin'
@@ -879,10 +878,17 @@ def login_signup_page():
                             st.session_state['user_id'] = user['user_id']
                             st.session_state['username'] = user['username']
                             st.session_state['role'] = user['role']
+                            
+                            # --- THE FIX: Conditional redirection based on role ---
+                            if st.session_state['role'] == 'admin':
+                                st.session_state['page'] = 'Admin Panel'
+                            else:
+                                st.session_state['page'] = 'Home'
+                            
                             st.rerun()
                         else:
                             st.error("Incorrect username or password")
-        
+            
             elif choice == "Sign Up":
                 st.markdown("<h3>Create a new account</h3>", unsafe_allow_html=True)
                 with st.form("signup_form_popover"):
@@ -1579,7 +1585,7 @@ def dashboard_page(dashboard_type):
     
     urls = {
         "Stock": r"https://app.powerbi.com/view?r=eyJrIjoiNDBkMWQzMzUtYzAwYS00NGE3LTk5NDEtZTI1NzM0MjE4Yjc1IiwidCI6IjE0ZjljNmYzLTIyMGUtNDA4Ni1iYzc5LTFlNjUxZTQwZDZhYiJ9&pageName=8c6c3d2a8437e7888986",
-        "MF": r"https://app.fabric.microsoft.com/view?r=eyJrIjoiMmI2NTI3N2QtOGQ4NS00MWYxLWFlY2ItNzA0NjU1N2QyODcwIiwidCI6IjE0ZjljNmYzLTIyMGUtNDA4Ni1iYzc5LTFlNjUxZTQwZDZhYiJ9" 
+        "MF": r"https://app.fabric.microsoft.com/view?r=eyJrIjoiNDBkMWQzMzUtYzAwYS00NGE3LTk5NDEtZTI1NzM0MjE4Yjc1IiwidCI6IjE0ZjljNmYzLTIyMGUtNDA4Ni1iYzc5LTFlNjUxZTQwZDZhYiJ9" 
     }
     st.markdown(f'<iframe title="{dashboard_type} Dashboard" width="100%" height="600" src="{urls[dashboard_type]}" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
 
