@@ -169,10 +169,6 @@ For questions, feedback, or collaboration:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-MIT License
-
-Copyright (c) 2025 Sakshi Shastri
-
 - 
 ```mermaid
 flowchart TD
