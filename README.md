@@ -4,6 +4,11 @@ AlphaVue is a **Streamlit web application** that provides **personalized investm
 It helps users understand their risk profile and receive **data-driven portfolio suggestions** for stocks and mutual funds.  
 
 ---
+## Live Demo
+
+Check out the live AlphaVue application here: [AlphaVue Web App](https://alphavue.streamlit.app/)
+
+
 
 ## 🌟 Key Features
 
