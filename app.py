@@ -19,6 +19,7 @@ st.set_page_config(
     page_icon="static/logo4.png",  # Path to your favicon file
     layout="wide"
 )
+st.markdown('<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">', unsafe_allow_html=True)
 
 
 
